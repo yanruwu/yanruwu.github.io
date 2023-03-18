@@ -261,3 +261,42 @@ padding-top: 20px;
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+
+.menu{
+    display:none;
+    z-index:1;
+    position:absolute;
+    width:100%;
+    background-color: #DBCFC3;
+    position:absolute;
+    margin:auto;
+    padding:0;
+}
+
+.menu li a{
+    display:block;
+    color: rgb(47, 47, 47);
+}
+
+.menu li a:visited{
+    color: rgb(47, 47, 47);
+}
+
+.menu li a:hover{
+    background-color:#dfdfe2;
+}
+
+.menu ul{
+    padding:0;
+    margin:auto;
+    width:100%;
+    display:block;
+    background-color:#DBCFC3;
+    
+}
+
+.menu.open{
+    display:contents;
+}
+
