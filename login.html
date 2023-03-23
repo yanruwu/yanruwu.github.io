@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (min-width:1050px)" href="lucia.css">
+        <link rel="stylesheet" media="screen and (max-width:1050px)" href="lucia2.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>·LOGIN·</h1> 
+        <form class="passform" action="lucia.html" onsubmit="return passcheck()">
+            <label for="name">
+                Introduce tu nombre: <input required id="name" type="text" placeholder="Fulanito..."/>
+            </label>
+                <label for="password">
+                    Introduce tu contraseña: <input required id="main-password" type="password" placeholder="Contraseña..."/>
+                </label>
+                <button type="submit" >Validar</button>
+        </form>
+    </body>
+    <footer>
+        <p>Copyright &copy; 2023 LaGranVenganza. All Rights Reserved </p>
+    </footer> 
+    <script type="text/javascript" src="password.js"></script>
+
+
+</html>
