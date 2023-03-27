@@ -7,15 +7,17 @@
         <link rel="stylesheet" media="screen and (max-width:1050px)" href="lucia2.css">
         <title>Login</title>
     </head>
-    <body>
+    <body id="loginid">
         <h1>·LOGIN·</h1> 
         <form class="passform" action="lucia.html" onsubmit="return passcheck()">
             <label for="name">
-                Introduce tu nombre: <input required id="name" type="text" placeholder="Fulanito..."/>
+                Introduce tu nombre:
             </label>
+            <input required id="name" type="text" placeholder="Fulanito..."/>
                 <label for="password">
-                    Introduce tu contraseña: <input required id="main-password" type="password" placeholder="Contraseña..."/>
+                    Introduce tu contraseña:
                 </label>
+                <input required id="main-password" type="password" placeholder="Contraseña..."/>
                 <button type="submit" >Validar</button>
         </form>
     </body>
