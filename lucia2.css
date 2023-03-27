@@ -9,6 +9,10 @@ html, input {
 font-family: Abel;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 h1 {
 font-weight: 400;
 font-size: 4rem;
@@ -53,7 +57,7 @@ font-weight: bold;
 
 section {
 background-color: whitesmoke;
-width: 90%;
+width: 95%;
 height: 100%;
 margin: auto;
 box-shadow: 0px 0px 10px 0px rgb(55, 55, 55);
@@ -126,12 +130,17 @@ font-size: 2rem;
 }
 
 
-nav > ul > li > a:visited {
-color: rgb(47, 47, 47);
+nav > ul > li > a:visited, .calendar:visited {
+    color: rgb(47, 47, 47);
 }
 
-nav > ul > li > a {
-color: rgb(47, 47, 47);
+nav > ul > li > a, .calendar {
+    color: rgb(47, 47, 47);
+}
+
+.calendar:hover{
+    color:black;
+    font-weight: bold;
 }
 
 .border:hover {
