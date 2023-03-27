@@ -103,13 +103,19 @@ h2{
     font-size: 2rem;
 }
 
-nav > ul > li > a:visited {
+nav > ul > li > a:visited, .calendar:visited {
     color: rgb(47, 47, 47);
 }
 
-nav > ul > li > a {
+nav > ul > li > a, .calendar {
     color: rgb(47, 47, 47);
 }
+
+.calendar:hover{
+    color:black;
+    font-weight: bold;
+}
+
   
 .border:hover{
     color:#dfdfe2;
@@ -218,9 +224,12 @@ form {
 button{
     margin-top:10px;
     width:60px;
+    margin-bottom:20px;
 }
 
 label{
     display:inline;
     margin-top: 10px;
 }
+
+
