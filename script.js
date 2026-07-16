@@ -47,9 +47,8 @@ const personEl=document.getElementById('calcPerson');
 
 const PRICE={
 alojamiento:{
-arabba:{label:'Arabba · Corvara · La Villa',low:1800,high:2600},
-cortina:{label:'Cortina d’Ampezzo',low:2200,high:3200},
-canazei:{label:'Canazei · Val di Fassa',low:1400,high:2100}
+comodo:{label:'Hoteles cómodos (3★) en Cortina y Ortisei, 2 noches cada uno.',low:1030,high:1400},
+superior:{label:'Hoteles superiores (4★) en Cortina y Ortisei, 2 noches cada uno.',low:1700,high:2250}
 },
 vehiculo:{
 uno:{label:'Un vehículo de 7 plazas.',low:650,high:820,fuelLow:260,fuelHigh:380,fuelNote:'Un solo coche: menos parkings duplicados.'},
@@ -59,7 +58,7 @@ comidaPP:{low:150,high:195},
 remontesPP:{low:40,high:60}
 };
 
-const state={alojamiento:'arabba',vehiculo:'uno',viajeros:6};
+const state={alojamiento:'comodo',vehiculo:'uno',viajeros:6};
 const eur=n=>Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €';
 const range=(low,high)=>`${eur(low)}–${eur(high)}`;
 
@@ -68,7 +67,7 @@ const aloj=PRICE.alojamiento[state.alojamiento];
 const veh=PRICE.vehiculo[state.vehiculo];
 const n=state.viajeros;
 const rows=[
-{name:'Alojamiento',note:'Casa completa, 4 noches · '+aloj.label+'.',low:aloj.low,high:aloj.high},
+{name:'Alojamiento',note:aloj.label,low:aloj.low,high:aloj.high},
 {name:'Coche(s)',note:veh.label,low:veh.low,high:veh.high},
 {name:'Combustible, peajes y parkings',note:veh.fuelNote,low:veh.fuelLow,high:veh.fuelHigh},
 {name:'Comida',note:`Supermercado, refugios y cenas para ${n} personas.`,low:PRICE.comidaPP.low*n,high:PRICE.comidaPP.high*n},
