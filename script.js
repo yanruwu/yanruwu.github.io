@@ -47,8 +47,8 @@ const personEl=document.getElementById('calcPerson');
 
 const PRICE={
 alojamiento:{
-comodo:{label:'Hoteles cómodos (3★) en Cortina y Ortisei, 2 noches cada uno.',low:1030,high:1400},
-superior:{label:'Hoteles superiores (4★) en Cortina y Ortisei, 2 noches cada uno.',low:1700,high:2250}
+rural:{label:'Casas rurales en San Vito di Cadore y Castelrotto/Siusi, 2 noches cada una.',low:720,high:1050},
+hotel:{label:'Hoteles céntricos en Cortina y Ortisei, 2 noches cada uno.',low:1400,high:2000}
 },
 vehiculo:{
 uno:{label:'Un vehículo de 7 plazas.',low:650,high:820,fuelLow:260,fuelHigh:380,fuelNote:'Un solo coche: menos parkings duplicados.'},
@@ -58,7 +58,7 @@ comidaPP:{low:150,high:195},
 remontesPP:{low:40,high:60}
 };
 
-const state={alojamiento:'comodo',vehiculo:'uno',viajeros:6};
+const state={alojamiento:'rural',vehiculo:'uno',viajeros:6};
 const eur=n=>Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €';
 const range=(low,high)=>`${eur(low)}–${eur(high)}`;
 
